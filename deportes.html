@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Diario Provincias, información local, nacional e internacional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- reset -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- fuentes -->
+  <link rel="stylesheet" href="fuentes/stylesheet.css">
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- mediaqueries adaptación -->
+  <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+
+<body>
+
+  <!-- Cabecera principal -->
+  <header class="site-header">
+
+    <!-- Header superior -->
+    <div class="site-header__top">
+
+      <div class="container d-grid flow-col ">
+        <!-- Header superior izquierda -->
+        <div class="site-header__top-left d-grid flow-col justify-start gap-x-4 ">
+
+          <a class="icon-button" href="#">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_search"></use>
+            </svg>
+            <span class="icon-button__text">Buscar</span>
+          </a>
+
+          <a class="icon-button" href="#">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_calendar"></use>
+            </svg>
+            <span class="icon-button__text">Hemeroteca</span>
+          </a>
+
+        </div>
+
+        <!-- Header superior centro -->
+        <div class="site-header__social d-grid flow-col justify-center gap-x-4">
+
+          <a href="#" aria-label="red social X">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_x"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social Facebook">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_facebook"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social YouTube">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_youtube"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social LinkedIn">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_linkedin"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social TikTok">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_tiktok"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social WhatsApp">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_whatsapp"></use>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="red social Telegram">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_telegram"></use>
+            </svg>
+          </a>
+
+        </div>
+
+        <!-- Header superior derecha -->
+        <div class="site-header__top-right d-grid flow-col justify-end gap-x-4 ">
+
+          <a class="icon-button" href="#">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_newsletter"></use>
+            </svg>
+            <span class="icon-button__text">Newsletter</span>
+          </a>
+
+          <a class="icon-button" href="#">
+            <svg class="icon">
+              <use href="imagenes/icons-sprite.svg#icon_user"></use>
+            </svg>
+            <span class="icon-button__text">Acceso usuarios</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Logo y botón menú -->
+    <div class="site-header__brand">
+      <img src="imagenes/lasprovincias-negro.svg" alt="logotipo Diario Provincias">
+
+      <button id="boton-menu" class="site-header__menu-button" type="button" aria-label="Abrir menú">
+        <svg class="icon">
+          <use href="imagenes/icons-sprite.svg#icon_bars"></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="main-nav__list d-grid container">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">España</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Economía</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Cultura</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="#" aria-current="page">Deportes</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Internacional</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Sociedad</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Podcasts</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Últimas noticias</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Menú lateral solo aparece en pantallas pequeñas -->
+    <div id="menu-lateral" class="side-menu">
+
+      <button id="boton-cerrar" class="side-menu__close" type="button" aria-label="Cerrar menú">
+        <svg class="icon">
+          <use href="imagenes/icons-sprite.svg#icon_close"></use>
+        </svg>
+      </button>
+
+      <div class="side-menu__logo">
+        <img src="imagenes/lasprovincias-negro.svg" alt="logotipo Diario Provincias">
+      </div>
+
+      <div class="side-menu__social d-grid">
+
+        <a href="#" aria-label="red social X">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_x"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social Facebook">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social YouTube">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_youtube"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social LinkedIn">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_linkedin"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social TikTok">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_tiktok"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social WhatsApp">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_whatsapp"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="red social Telegram">
+          <svg class="icon">
+            <use href="imagenes/icons-sprite.svg#icon_telegram"></use>
+          </svg>
+        </a>
+
+      </div>
+
+      <ul class="side-menu__nav d-grid">
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">España</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Economía</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Cultura</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Deportes</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Internacional</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Sociedad</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Podcasts</a>
+        </li>
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">Últimas noticias</a>
+        </li>
+      </ul>
+
+      <div class="side-menu__extra">
+        --- otros elementos ---
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- Main -->
+  <main class="container" class="page-main">
+   
+    <!-- Publicidad superior -->
+    <div class="ad-top">
+      <img src="publi/banner_sup.jpg" alt="">
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="page-main__inner d-grid">
+
+      <!-- Artículo -->
+      <article class="article">
+
+        <header class="article__header">
+
+          <div class="breadcrumb">
+            <a class="breadcrumb__link" href="#">deportes</a> &gt;
+            <a class="breadcrumb__link" href="#">ciclismo</a>
+          </div>
+
+          <figure class="article__figure">
+            <img src="imagenes/tour-francia-noti.jpg" alt="Varios ciclistas llegando al sprint en el final de etapa">
+
+            <figcaption class="article__caption">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, enim /
+              <span class="article__photographer">EFE</span>
+            </figcaption>
+          </figure>
+
+          <h1 class="article__title">
+            El lider del equipo Phonak gana en una emocionante llegada al sprint
+          </h1>
+
+          <div class="article__lead">
+            <p>
+              Lorem ipsum dolor sit amet consectetur20 adipisicing elit. Dicta, odio quisquam nam similique
+              recusandae voluptatum doloremque soluta quibusdam cupiditate id!
+            </p>
+          </div>
+
+          <p class="article__author">
+            <cite>Ángeles Espinosa</cite>
+          </p>
+
+          <p class="article__location">
+            Madrid <time datetime="2024-05-07">7 de mayo de 2024</time>
+          </p>
+
+        </header>
+
+        <div class="article__body">
+
+          <h2>Lorem ipsum dolor sit amet</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae libero, possimus? Eaque quod
+            adipisci, minima, reprehenderit hic <a href="#">itaque officia</a> numquam maiores aperiam
+            architecto consequuntur accusamus laboriosam recusandae molestiae reiciendis dolorem autem,
+            facere assumenda voluptatibus, Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ab blanditiis reprehenderit perspiciatis quas in a, quasi minima at,
+            libero unde quaerat non.
+          </p>
+
+          <p>
+            Illo corporis dolor eum aperiam dolores, saepe neque molestias, odio quibusdam
+            <a href="#">officia</a> nulla, eos numquam iste quod similique. Asperiores temporibus,
+            deserunt porro ess.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dicta maxime quia impedit tempora,
+            vitae nam maiores beatae accusantium, similique et porro mollitia, suscipit enim repellat minima!
+            Vero, quae! Id, suscipit explicabo. Odit, officiis.
+          </p>
+
+          <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur minima, odio repellendus
+            nostrum dicta aspernatur mollitia <a href="#">facere reprehenderit earum</a> sequi eum voluptate
+            facilis perspiciatis totam magnam, unde ratione deserunt harum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed ratione dolor atque
+            cumque consequatur assumenda quis laboriosam cupiditate? Voluptatum quibusdam, libero culpa at
+            quasi hic quaerat eius dolorum recusandae.
+          </p>
+
+        </div>
+
+        <!-- Información relacionada -->
+        <aside class="related">
+
+          <p class="related__title">
+            Más información relacionada
+          </p>
+
+          <div class="related__grid d-grid">
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-1.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-2.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-3.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-4.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-5.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+            <div class="related-card">
+              <figure class="related-card__figure">
+                <a href="#">
+                  <img src="imagenes/deporte-relacionada-6.jpg" alt="">
+                </a>
+              </figure>
+
+              <p class="related-card__text">
+                <a href="#">Eum voluptate consectetur adipisicing elit caesar gallis</a>
+              </p>
+            </div>
+
+          </div>
+
+        </aside>
+
+      </article>
+
+      <!-- Columna lateral -->
+      <aside class="sidebar">
+
+        <!-- Publicidad -->
+        <div class="ad-box">
+
+          <div class="ad-box__title">
+            Publicidad
+          </div>
+
+          <div class="ad-box__vertical">
+            <img src="imagenes/publi-orange.jpg" alt="bla bla descripción publicidad">
+          </div>
+
+          <div class="ad-box__horizontal">
+            <img src="imagenes/publi-teatro.gif" alt="bla bla descripción publicidad">
+          </div>
+
+        </div>
+
+        <!-- Primer plano -->
+        <div class="spotlight">
+
+          <p class="spotlight__title">Primer plano</p>
+
+          <div class="spotlight-card">
+            <figure class="spotlight-card__figure">
+              <a href="#">
+                <img src="imagenes/primer_plano_1.jpg" alt="bla bla descripcion">
+              </a>
+            </figure>
+
+            <p class="spotlight-card__text">
+              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit voluptas</a>
+            </p>
+
+            <p class="spotlight-card__author">Marta Sanz Romero</p>
+          </div>
+
+          <div class="spotlight-card">
+            <figure class="spotlight-card__figure">
+              <a href="#">
+                <img src="imagenes/primer_plano_2.jpg" alt="bla bla descripcion">
+              </a>
+            </figure>
+
+            <p class="spotlight-card__text">
+              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit voluptas</a>
+            </p>
+
+            <p class="spotlight-card__author">Marta Sanz Romero</p>
+          </div>
+
+          <div class="spotlight-card">
+            <figure class="spotlight-card__figure">
+              <a href="#">
+                <img src="imagenes/primer_plano_3.jpg" alt="bla bla descripcion">
+              </a>
+            </figure>
+
+            <p class="spotlight-card__text">
+              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit voluptas</a>
+            </p>
+
+            <p class="spotlight-card__author">Marta Sanz Romero</p>
+          </div>
+
+          <div class="spotlight-card">
+            <figure class="spotlight-card__figure">
+              <a href="#">
+                <img src="imagenes/primer_plano_4.jpg" alt="bla bla descripcion">
+              </a>
+            </figure>
+
+            <p class="spotlight-card__text">
+              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit voluptas</a>
+            </p>
+
+            <p class="spotlight-card__author">Marta Sanz Romero</p>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer container">
+
+    <ul class="site-footer__list d-grid">
+
+      <li class="site-footer__item">
+        <small>EDICIONES EL PAÍS S.L.</small>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Contacto</a>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Venta de contenidos</a>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Publicidad</a>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Aviso legal</a>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Política cookies</a>
+      </li>
+
+      <li class="site-footer__item">
+        <a class="site-footer__link" href="#">Mapa web</a>
+      </li>
+
+    </ul>
+
+    <div class="site-footer__logo">
+      <a href="https://www.prisa.com/es" target="_blank">
+        <img src="imagenes/logo-prisa.png" alt="Ir a página web del Grupo PRISA">
+      </a>
+    </div>
+
+  </footer>
+
+  <!-- Script menú lateral -->
+  <script src="js/menu-lateral.js"></script>
+
+
+</body>
+
+</html>

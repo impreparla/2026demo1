@@ -1,0 +1,233 @@
+/* ======================================================
+   MEDIA QUERIES DIARIO PROVINCIAS
+   Versión BEM manteniendo el comportamiento original
+====================================================== */
+
+
+/* ======================================================
+   punto ruptura 1050px aprox. / 68em
+====================================================== */
+
+@media (max-width: 68em) {
+
+  /* HEADER PRINCIPAL Y NAVEGACIÓN */
+
+  /* ocultamos algunos elementos */
+  .site-header__social,
+  .site-header nav ul.d-grid {
+    display: none;
+  }
+
+  /* ponemos algo menos de padding lateral en la zona gris */
+  .site-header__top {
+    padding: 1em 1.5em;
+  }
+
+  /* redefinimos zona de logo y botón menú */
+  .site-header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 0;
+    text-align: left;
+  }
+
+  .site-header__brand img {
+    width: 240px;
+  }
+
+  .site-header__menu-button {
+    display: block;
+  }
+
+  .side-menu.visible {
+    display: block;
+  }
+
+  /* footer */
+  .site-footer__list.d-grid {
+    grid-auto-flow: row;
+    justify-content: normal;
+    text-align: left;
+  }
+
+  .site-footer__item {
+    padding: 0.5em 2em;
+    border-bottom: 1px solid #C7C7C7;
+  }
+}
+
+
+/* ======================================================
+   punto ruptura 850px
+====================================================== */
+
+@media (max-width: 850px) {
+
+  /* main */
+  .page-main__inner.d-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* publi */
+  .ad-box__vertical {
+    display: none;
+  }
+
+  .ad-box__horizontal {
+    display: block;
+  }
+
+  /* primer plano */
+  .spotlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .spotlight__title {
+    grid-column: 1 / 3;
+  }
+
+  .spotlight-card {
+    margin: 0;
+  }
+
+  /* footer */
+  .site-footer {
+    margin: 0;
+    border: none;
+  }
+}
+
+
+/* ======================================================
+   punto ruptura 600px
+====================================================== */
+
+@media (max-width: 600px) {
+
+  /* header principal */
+  .icon-button__text {
+    display: none;
+  }
+
+  .site-header__brand img {
+    width: 180px;
+  }
+
+  /* info relacionada */
+  .related__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ======================================================
+   punto ruptura 450px
+====================================================== */
+
+@media (max-width: 450px) {
+
+  /* cambiamos padding izquierdo y derecho de algunos elementos */
+  .site-header__top,
+  .site-header__brand,
+  .article,
+  .sidebar,
+  .site-footer,
+  .site-footer__item {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /* h1 y subtítulo del artículo */
+  .article__title {
+    font-size: 1.8rem;
+  }
+
+  .article__lead {
+    font-size: 1.2rem;
+  }
+
+  /* info relacionada y primer plano */
+  .related__grid,
+  .spotlight {
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+
+  .spotlight__title {
+    grid-column: auto;
+  }
+}
+
+
+/* fin mediaqueries */
+
+/* ======================================================
+   AJUSTES RESPONSIVE DEL NUEVO HEADER
+====================================================== */
+
+@media (max-width: 68em) {
+  .site-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .site-header__top {
+    padding: 0.75rem 1.5em;
+  }
+
+  .site-header__top .container {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-header__brand {
+    align-items: center;
+    padding: 1rem 1.5rem 1rem;
+  }
+
+  .site-header__brand img {
+    width: clamp(180px, 34vw, 260px);
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header__top-left,
+  .site-header__top-right {
+    column-gap: 0.35rem;
+  }
+
+  .icon-button {
+    padding: 0.35rem;
+  }
+
+  .site-header__brand img {
+    width: clamp(160px, 48vw, 210px);
+  }
+
+  .side-menu {
+    right: 0.75rem;
+    top: 0.75rem;
+    width: calc(100% - 1.5rem);
+    height: calc(100dvh - 1.5rem);
+    padding: 4.25rem 1.25rem 1.5rem;
+    border-radius: 22px;
+  }
+
+  .side-menu__social.d-grid {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .site-header__top,
+  .site-header__brand {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
